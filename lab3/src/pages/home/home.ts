@@ -1,3 +1,4 @@
+import { AboutPage } from './../about/about';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -9,6 +10,9 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
 
+  }
+  gotoPage(){
+    this.navCtrl.push(AboutPage);
   }
 
 }
